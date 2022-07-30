@@ -1,0 +1,44 @@
+#hesap makinesi
+#toplama -çarpma -çıkartma -bölme
+#Kullanıcı değeri
+sonuc=0
+try:
+  x = int(input("İşlem yapmak için bir değer girin "))
+  y = int(input("İşlem yapmak için bir değer girin "))
+  print("Bölme için: '1' ")
+  print("Çarpma için: '2' ")
+  print("Toplama için: '3' ")
+  print("Çıkartma için: '4' ")
+  islem = str(input("İşlemini Seç: "))
+except:
+  print("Tanımınız hatalı")
+else:  
+  if int(islem) < 5:
+    if x > y:
+      if islem =="1":
+        sonuc = x // y
+        print(sonuc)
+      elif islem =="2":
+        sonuc = x * y
+        print(sonuc)
+      elif islem =="3":
+        sonuc = x + y
+        print(sonuc)
+      else:
+        sonuc = x - y
+        print(sonuc)
+    if y > x:
+      if islem =="1":
+        sonuc = y // x
+        print(sonuc)
+      elif islem =="2":
+        sonuc = y * x
+        print(sonuc)
+      elif islem =="3":
+        sonuc = y + x
+        print(sonuc)
+      else:
+        sonuc = y - x
+        print(sonuc)
+  else:
+    print("1-4 arası işlem seçin")    
